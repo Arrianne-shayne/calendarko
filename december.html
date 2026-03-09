@@ -137,84 +137,6 @@ td:hover {
     cursor: default;
 }
 
-/* Christmas Day - December 25, 2026 (Friday) */
-tr:nth-child(5) td:nth-child(6) {
-    background: linear-gradient(145deg, #ff0000, #00ff00);
-    color: #fff;
-    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-    animation: glow 1.5s ease-in-out infinite;
-}
-
-tr:nth-child(5) td:nth-child(6)::after {
-    content: '🎁';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 14px;
-    animation: bounce 1s ease-in-out infinite;
-}
-
-@keyframes glow {
-    0%, 100% { box-shadow: 0 0 25px rgba(255, 0, 0, 0.8); }
-    50% { box-shadow: 0 0 35px rgba(0, 255, 0, 1); }
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-3px); }
-}
-
-/* New Year's Eve - December 31, 2026 (Thursday) */
-tr:nth-child(6) td:nth-child(5) {
-    background: linear-gradient(145deg, #ffd700, #ff1493);
-    color: #fff;
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.9);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(6) td:nth-child(5)::after {
-    content: '🎆';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 14px;
-    animation: explode 1.5s ease-in-out infinite;
-}
-
-@keyframes explode {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.3); opacity: 0.8; }
-}
-
-/* Winter Solstice - December 21 */
-tr:nth-child(4) td:nth-child(2) {
-    background: linear-gradient(145deg, #4a148c, #7c4dff);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(74, 20, 140, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(4) td:nth-child(2)::after {
-    content: '❄️';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 12px;
-    animation: fall 2s ease-in-out infinite;
-}
-
-@keyframes fall {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(3px) rotate(10deg); }
-}
-
 .nav-btn {
     border: 2px solid #ff1493;
     padding: 12px 24px;
@@ -269,31 +191,6 @@ tr:nth-child(4) td:nth-child(2)::after {
     box-shadow: 
         0 3px 0 #4a0e2e,
         0 4px 10px rgba(255, 20, 147, 0.4);
-}
-
-/* Floatins */
-body::before {
-    content: '❄️';
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    font-size: 30px;
-    animation: float 6s ease-in-out infinite;
-    opacity: 0.6;
-    filter: drop-shadow(0 0 10px #87ceeb);
-    pointer-events: none;
-}
-
-body::after {
-    content: '✨';
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    font-size: 25px;
-    animation: float 8s ease-in-out infinite reverse;
-    opacity: 0.5;
-    filter: drop-shadow(0 0 8px #ffd700);
-    pointer-events: none;
 }
 
 @keyframes float {

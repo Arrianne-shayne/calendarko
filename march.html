@@ -132,25 +132,6 @@ td:hover {
     cursor: default;
 }
 
-/* International Women's Day - March 8 */
-tr:nth-child(3) td:first-child {
-    background: linear-gradient(145deg, #9c27b0, #ff1493);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(3) td:first-child::after {
-    content: '♀';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 14px;
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
 @keyframes pulse {
     0%, 100% { opacity: 1; transform: scale(1); }
     50% { opacity: 0.7; transform: scale(1.2); }
@@ -365,16 +346,6 @@ body::after {
 <td>29</td>
 <td>30</td>
 <td>31</td>
-<td class="highlight"></td>
-<td class="highlight"></td>
-<td class="highlight"></td>
-<td class="highlight"></td>
-</tr>
-
-<tr>
-<td class="highlight"></td>
-<td class="highlight"></td>
-<td class="highlight"></td>
 <td class="highlight"></td>
 <td class="highlight"></td>
 <td class="highlight"></td>

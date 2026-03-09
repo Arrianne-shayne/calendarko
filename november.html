@@ -57,17 +57,6 @@ h1 {
     filter: drop-shadow(0 4px 6px rgba(255, 20, 147, 0.4));
 }
 
-h1::before {
-    content: '🦃';
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 35px;
-    animation: bloom 3s ease-in-out infinite;
-    filter: drop-shadow(0 0 5px #ff1493);
-}
-
 h1::after {
     content: '🍁';
     position: absolute;
@@ -131,122 +120,33 @@ td:hover {
     box-shadow: none;
     cursor: default;
 }
-
-/* Daylight Saving Time Ends - November 1, 2026 (First Sunday) */
-tr:nth-child(2) td:first-child {
-    background: linear-gradient(145deg, #607d8b, #90a4ae);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(96, 125, 139, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(2) td:first-child::after {
-    content: '🕐';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 12px;
-    animation: tick 2s ease-in-out infinite;
-}
-
-@keyframes tick {
-    0%, 100% { transform: rotate(0deg); }
-    25% { transform: rotate(15deg); }
-    75% { transform: rotate(-15deg); }
-}
-
-/* Veterans Day - November 11 */
-tr:nth-child(3) td:nth-child(4) {
-    background: linear-gradient(145deg, #1976d2, #42a5f5);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(25, 118, 210, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(3) td:nth-child(4)::after {
-    content: '🎖️';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 12px;
-    animation: shine 1.5s ease-in-out infinite;
-}
-
-@keyframes shine {
-    0%, 100% { filter: brightness(1); transform: scale(1); }
-    50% { filter: brightness(1.3); transform: scale(1.1); }
-}
-
-/* Thanksgiving - November 26, 2026 (Fourth Thursday) */
-tr:nth-child(5) td:nth-child(5) {
-    background: linear-gradient(145deg, #e65100, #ff9800);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(230, 81, 0, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(5) td:nth-child(5)::after {
-    content: '🦃';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 12px;
-    animation: gobble 1s ease-in-out infinite;
-}
-
-@keyframes gobble {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    50% { transform: translateY(-2px) rotate(5deg); }
-}
-
 .nav-btn {
-    border: 2px solid #ff1493;
-    padding: 12px 24px;
-    border-radius: 20px;
-    background: linear-gradient(145deg, #2d1525, #3d1f30);
-    color: #ffb6c1;
-    text-decoration: none;
-    font-weight: 700;
-    font-family: 'Quicksand', sans-serif;
-    display: inline-block;
-    margin: 10px;
-    box-shadow: 
+    border: 2px solid #ff1493;padding: 12px 24px;
+    border-radius: 20px;background: linear-gradient(145deg, #2d1525, #3d1f30);
+    color: #ffb6c1;  text-decoration: none;
+    font-weight: 700;   font-family: 'Quicksand', sans-serif;   display: inline-block;
+    margin: 10px;  box-shadow: 
         0 6px 0 #4a0e2e,
         0 8px 20px rgba(255, 20, 147, 0.4),
         0 0 15px rgba(255, 20, 147, 0.2);
-    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    text-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
-    letter-spacing: 1px;
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); text-shadow: 0 0 5px rgba(255, 20, 147, 0.5);
+    letter-spacing: 1px; position: relative; overflow: hidden;
 }
 
 .nav-btn::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 20, 147, 0.3) 0%, transparent 60%);
-    opacity: 0;
+    content: '';   position: absolute;
+   top: -50%;   left: -50%;
+    width: 200%;  height: 200%;
+    background: radial-gradient(circle, rgba(255, 20, 147, 0.3) 0%, transparent 60%);  opacity: 0;
     transition: opacity 0.3s;
 }
 
 .nav-btn:hover {
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 
+    transform: translateY(-3px) scale(1.05);   box-shadow: 
         0 9px 0 #4a0e2e,
         0 12px 25px rgba(255, 20, 147, 0.6),
         0 0 25px rgba(255, 20, 147, 0.4);
-    background: linear-gradient(145deg, #3d1f30, #4a2538);
-    color: #fff;
+    background: linear-gradient(145deg, #3d1f30, #4a2538);  color: #fff;
     border-color: #ff69b4;
 }
 
@@ -259,36 +159,6 @@ tr:nth-child(5) td:nth-child(5)::after {
     box-shadow: 
         0 3px 0 #4a0e2e,
         0 4px 10px rgba(255, 20, 147, 0.4);
-}
-
-/* Floatin */
-body::before {
-    content: '🍂';
-    position: fixed;
-    top: 10%;
-    left: 5%;
-    font-size: 30px;
-    animation: float 6s ease-in-out infinite;
-    opacity: 0.6;
-    filter: drop-shadow(0 0 10px #ff1493);
-    pointer-events: none;
-}
-
-body::after {
-    content: '🦃';
-    position: fixed;
-    top: 20%;
-    right: 10%;
-    font-size: 25px;
-    animation: float 8s ease-in-out infinite reverse;
-    opacity: 0.5;
-    filter: drop-shadow(0 0 8px #ff69b4);
-    pointer-events: none;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(10deg); }
 }
 
 /* floats */
@@ -311,21 +181,16 @@ body::after {
     filter: drop-shadow(0 0 5px #ff1493);
 }
 
-.heart:nth-child(1) { left: 15%; animation-delay: 0s; }
-.heart:nth-child(2) { left: 35%; animation-delay: 3s; font-size: 25px; }
-.heart:nth-child(3) { left: 55%; animation-delay: 6s; }
-.heart:nth-child(4) { left: 75%; animation-delay: 9s; font-size: 30px; }
+.heart:nth-child(1) { left: 15%; animation-delay: 0s; }.heart:nth-child(2) { left: 35%; animation-delay: 3s; font-size: 25px; }
+.heart:nth-child(3) { left: 55%; animation-delay: 6s; }.heart:nth-child(4) { left: 75%; animation-delay: 9s; font-size: 30px; }
 
 @keyframes floatUp {
     0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
+    transform: translateY(100vh) rotate(0deg); opacity: 0;
     }
     10% { opacity: 1; }
     90% { opacity: 0.5; }
-    100% {
-        transform: translateY(-100vh) rotate(720deg);
-        opacity: 0;
+    100% { transform: translateY(-100vh) rotate(720deg); opacity: 0;
     }
 }
 
@@ -350,8 +215,6 @@ body::after {
 <body>
 
 <div class="floating-hearts">
-    <div class="heart">🍂</div>
-    <div class="heart">🦃</div>
     <div class="heart">🧡</div>
     <div class="heart">🍁</div>
 </div>

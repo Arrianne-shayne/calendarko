@@ -138,25 +138,6 @@ td:hover {
     75% { transform: rotate(10deg); }
 }
 
-/* Women's Equality Day - August 26 */
-tr:nth-child(5) td:nth-child(4) {
-    background: linear-gradient(145deg, #9c27b0, #ce93d8);
-    color: #fff;
-    box-shadow: 0 0 20px rgba(156, 39, 176, 0.8);
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    font-weight: 700;
-    position: relative;
-}
-
-tr:nth-child(5) td:nth-child(4)::after {
-    content: '♀️';
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    font-size: 12px;
-    animation: glow 2s ease-in-out infinite;
-}
-
 @keyframes glow {
     0%, 100% { filter: drop-shadow(0 0 2px #fff); transform: scale(1); }
     50% { filter: drop-shadow(0 0 8px #fff); transform: scale(1.1); }
